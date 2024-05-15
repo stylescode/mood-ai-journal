@@ -1,6 +1,11 @@
 import { UserButton } from "@clerk/nextjs"
+import React from "react"
 
-const DashboardLayout = ({ children }) => {
+interface DashboardLayoutProps {
+  children: React.ReactNode
+}
+
+const DashboardLayout = ({ children }: DashboardLayoutProps) => {
 
   return (
     <div className="w-screen h-screen relative">
