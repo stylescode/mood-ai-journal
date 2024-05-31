@@ -8,7 +8,7 @@ const NewEntry = () => {
 
   const handleNewEntry = async () => {
     const data = await createNewEntry();
-    router.push(`/journal/${data.data.id}`)
+    router.push(`/journal/${data.id}`)
   }
 
   return (
