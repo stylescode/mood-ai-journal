@@ -14,6 +14,7 @@ export const createNewEntry = async () => {
 }
 
 export const updateEntry = async (id: string, content: string) => {
+  console.log('inside updateEntry');
   const res = await fetch(
     new Request(createURL(`/api/journal/${id}`), {
       method: 'PATCH',
