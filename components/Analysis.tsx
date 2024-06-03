@@ -1,11 +1,9 @@
-
-
-const Analysis = () => {
+const Analysis = ({ entry }) => {
   const analysisData = [
-    {name: 'Summary', value: ''},
-    {name: 'Subject', value: ''},
-    {name: 'Mood', value: ''},
-    {name: 'Negative', value: ''},
+    {name: 'Mood', value: entry.analysis.mood},
+    {name: 'Summary', value: entry.analysis.summary},
+    {name: 'Color', value: entry.analysis.color},
+    {name: 'Soundtrack', value: entry.analysis.soundtrack},
   ]
 
   return (
@@ -19,7 +17,6 @@ const Analysis = () => {
         ))}
       </ul>
     </div>
-
   )
 }
 
