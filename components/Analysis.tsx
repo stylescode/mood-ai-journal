@@ -1,4 +1,15 @@
-const Analysis = ({ entry }) => {
+interface AnalysisProps {
+  entry: {
+    analysis: {
+      mood: string;
+      summary: string;
+      color: string;
+      soundtrack: string;
+    }
+  }
+}
+
+const Analysis = ({ entry }: AnalysisProps) => {
   const analysisData = [
     {name: 'Mood', value: entry.analysis.mood},
     {name: 'Summary', value: entry.analysis.summary},
