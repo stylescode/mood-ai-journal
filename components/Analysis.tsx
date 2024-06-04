@@ -1,20 +1,21 @@
+'use client';
+
 interface AnalysisProps {
-  entry: {
-    analysis: {
-      mood: string;
-      summary: string;
-      color: string;
-      soundtrack: string;
-    }
+  data: {
+    mood: string;
+    summary: string;
+    color: string;
+    music: string;
   }
 }
 
-const Analysis = ({ entry }: AnalysisProps) => {
+const Analysis = ({ data }: AnalysisProps) => {
+
   const analysisData = [
-    {name: 'Mood', value: entry.analysis.mood},
-    {name: 'Summary', value: entry.analysis.summary},
-    {name: 'Color', value: entry.analysis.color},
-    {name: 'Soundtrack', value: entry.analysis.soundtrack},
+    {name: 'Mood', value: data.mood},
+    {name: 'Summary', value: data.summary},
+    {name: 'Color', value: data.color},
+    {name: 'Soundtrack', value: data.music},
   ]
 
   return (
