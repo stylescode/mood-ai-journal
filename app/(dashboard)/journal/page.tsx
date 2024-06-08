@@ -21,10 +21,9 @@ const getEntries = async () => {
 
 const JournalPage = async () => {
   const entries = await getEntries();
-  console.log('entries:', entries)
 
   return (
-    <div className="grid grid-cols-3 gap-4 p-10 bg-purple-100">
+    <div className="grid grid-cols-3 gap-4 p-10 bg-green-100">
       <NewEntry />
       {entries.map(entry => (
         <Link href={`/journal/${entry.id}`} key={entry.id}>
