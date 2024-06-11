@@ -46,4 +46,5 @@ model Analysis {
   summary   String       @db.Text
   color     String
   soundtrack  String
+  sentiment Float @default(0)
 }
