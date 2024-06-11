@@ -22,7 +22,8 @@ export const POST = async () => {
       mood: analysis.mood,
       summary: analysis.summary,
       color: analysis.color,
-      soundtrack: analysis.music
+      soundtrack: analysis.music,
+      sentiment: analysis.sentiment
     }
   })
 
