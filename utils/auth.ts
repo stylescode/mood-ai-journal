@@ -3,7 +3,6 @@ import { prisma } from "./db";
 
 export const getUserByClerkId = async () => {
   const { userId } = await auth();
-  console.log('THE AUTH:', userId);
 
   const user = await prisma.user.findUnique({
     where: {
