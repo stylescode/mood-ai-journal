@@ -9,6 +9,7 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/journal', label: 'Journal' },
   { href: '/insights', label: 'Insights' },
+  { href: '/history', label: 'History' },
 ]
 
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
